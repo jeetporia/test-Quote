@@ -7,22 +7,22 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
 </head> 
 <body>
     <!-- Script -->
     <div class="quote-container" id="quote-container">
+        
         <div class="quote-text">
              <i class="fas fa-quote-left">
                  <!-- taking this id so we can dynamically change this -->
-                 <span id="quote">
-                    Arise! Awake and stop not till the goal is reached
+                 <span id="quote">  
                  </span>
              </i>
         </div>
 
         <div class="quote-author">
             <span id="author">
-                Swami Vivekanand
             </span>
         </div>
 
@@ -37,6 +37,8 @@
             </button>
         </div>
     </div>
+
+    <div class="loader" id="loader"></div>
     <script src="quote.js"></script>
     <!-- if you are acceing variable of the quote.js in script then it should come first -->
     <script src="script.js"></script>
