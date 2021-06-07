@@ -43,8 +43,12 @@ function getRandomQuote() {
 async function getQuote() {
     loading();
     const url = 'https://type.fit/api/quotes';
-    const response = await fetch(url);
-    quoteResponse = await response.json();
+    try {   
+        const response = await fetch(url);
+        quoteResponse = await response.json();
+    } catch(error) {
+        console.log(error)
+    }
     // this will return the array of the object
     getRandomQuote()
     // console.log(quoteResponse[17]);
